@@ -1,9 +1,9 @@
 {
-  "name": "download-package-source",
+  "name": "fetch-package-source",
   "version": "0.0.0",
   "license": "MIT",
-  "repository": "juliangruber/download-package-source",
-  "description": "Download a npm package's source code",
+  "repository": "juliangruber/fetch-package-source",
+  "description": "Fetch a npm package's source code",
   "scripts": {
     "release": "np",
     "test": "prettier-standard && standard && node example"

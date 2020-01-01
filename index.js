@@ -6,7 +6,7 @@ const { promises: fs } = require('fs')
 const { exec } = require('child_process')
 const { promisify } = require('util')
 
-const download = async (url, version, dir) => {
+const fetchPackageSource = async (url, version, dir) => {
   const obj = githubUrlToObject(url)
   let res = await fetch(
     `https://github.com/${obj.user}/${obj.repo}/archive/${version}.tar.gz`
@@ -27,4 +27,4 @@ const download = async (url, version, dir) => {
   await fs.unlink(`${dir}/tgz`)
 }
 
-module.exports = download
+module.exports = fetchPackageSource

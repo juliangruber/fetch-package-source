@@ -1,6 +1,6 @@
-# download-package-source
+# fetch-package-source
 
-Download the source code of a particular version of a package published to npm.
+Fetcg the source code of a particular version of a package published to npm.
 
 This does _not_ download from npm as not all files might be published there.
 Therefore the source might be more useful to you, for example if you want
@@ -9,11 +9,15 @@ to run its test suite.
 ## Usage
 
 ```js
-const download = require('download-package-source')
+const fetchPackageSource = require('fetch-package-source')
 const { tmpdir } = require('os')
 
 const dir = `${tmpdir()}/${Date.now()}`
-await download('https://github.com/juliangruber/browser-run', '1.0.0', dir)
+await fetchPackageSource(
+  'https://github.com/juliangruber/browser-run',
+  '1.0.0',
+  dir
+)
 console.log(dir)
 ```
 
