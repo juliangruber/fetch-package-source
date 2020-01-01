@@ -1,6 +1,6 @@
 {
   "name": "fetch-package-source",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": "juliangruber/fetch-package-source",
   "description": "Fetch a npm package's source code",
