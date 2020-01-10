@@ -1,6 +1,6 @@
 # fetch-package-source
 
-Fetcg the source code of a particular version of a package published to npm.
+Fetch the source code of a particular version of a package published to npm.
 
 This does _not_ download from npm as not all files might be published there.
 Therefore the source might be more useful to you, for example if you want
