@@ -1,4 +1,4 @@
-# fetch-package-source
+# fetch-package-source ![ci](https://github.com/juliangruber/fetch-package-source/workflows/ci/badge.svg)
 
 Fetch the source code of a particular version of a package published to npm.
 
